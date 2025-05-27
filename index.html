@@ -1,200 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breiner Julian - Portafolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
-    header { background: #0d6efd; color: white; padding: 20px; text-align: center; }
-    nav { background: #084298; padding: 10px; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    section { padding: 40px; max-width: 1000px; margin: auto; }
-    h2 { color: #0d6efd; }
-    .proyecto { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
-    .contacto { background: #0d6efd; color: white; text-align: center; padding: 20px; }
-    a { color: white; text-decoration: none; }
-    .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.skill {
-  width: 100px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.skill img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 8px;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
-}
-
-ul li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-}
-.card-profesional {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgb(0, 0, 0);
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-    }
-
-    .card-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 30px;
-      border: 3px solid #0d6efd;
-    }
-
-    .info {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .info h2 {
-      color: #0d6efd;
-      margin-bottom: 10px;
-    }
-
-    .info p {
-      margin: 6px 0;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .info a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-
-    .info a:hover {
-      text-decoration: underline;
-    }
-
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce Finca Raíz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>julian rodriguez desarrollador full stack</h1>
-    <p>Tecnólogo en Análisis y Desarrollo de Software</p>
+    <div class="logo">🏡 Finca Raíz</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <a href="proyectos.html">Ver Proyectos</a>
-  </nav>
-
-  <section>
-    <h2>Sobre mí</h2>
-    <p>Desarrollador de software con experiencia en desarroll movil y web apasionado por la tecnologia y los avancez de la inteligencia artificial.</p>
-
-    <h2>Habilidades y Tecnologías</h2>
-<div class="skills-grid">
-  <!-- Lenguajes -->
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"><span>Flutter</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"><span>Dart</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift"><span>Swift</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><span>Kotlin</span></div>
-
-  <!-- Frameworks y Herramientas -->
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"><span>Angular</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
-
-  <!-- IDEs -->
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio"><span>Android Studio</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio"><span>Visual Studio</span></div>
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache NetBeans"><span>Apache NetBeans</span></div>
-
-  <!-- Diseño UI/UX -->
-  <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UI/UX"><span>Diseño UI/UX</span></div>
-
-  <!-- Edición multimedia -->
-  <div class="skill"><span>🎬 Camtasia Studio</span></div>
-  <div class="skill"><span>🎥 Adobe Premiere Pro</span></div>
-  <div class="skill"><span>🖼 Adobe Photoshop</span></div>
-
-  <!-- Modelado y arquitectura -->
-  <div class="skill"><span>📐 StarUML</span></div>
+  <div class="top-image-banner">
+  <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Arriendos">
 </div>
+  <main>
+    <section class="search-filters">
+  <input type="text" placeholder="Buscar propiedad...">
+  <select>
+    <option>Todas las categorías</option>
+    <option>Casas</option>
+    <option>Arriendos</option>
+    <option>Lotes</option>
+    <option>Proyectos</option>
+  </select>
+</section>
 
-</div>
-<h3>¿Qué puedo hacer con Python?</h3>
-<ul>
-  <li>🧠 Inteligencia Artificial y Machine Learning</li>
-  <li>📊 Análisis y visualización de datos</li>
-  <li>🕸 Desarrollo de APIs y aplicaciones web (Django, Flask)</li>
-  <li>🤖 Automatización de tareas y scripts</li>
-  <li>🎮 Desarrollo de videojuegos (con Pygame)</li>
-  <li>📚 Creación de bots, scraping y manejo de archivos</li>
-</ul>
-
-
-<div class="card-profesional">
-  <h2>Tarjeta Profesional</h2>
-  <div class="card-content">
-<img src="https://via.placeholder.com/150" alt="" class="profile-img">    <div class="info">
-      <h3>Nombre: <span>julian rodriguez</span></h3>
-      <p><strong>Título:</strong> Ingeniero en Sistemas / Desarrollador de Software</p>
-      <p><strong>Especialización:</strong> Desarrollo de aplicaciones móviles y web multiplataforma</p>
-      <p><strong>Lenguajes:</strong> Flutter, Dart, Java, Python, C++, C#, JavaScript, Kotlin, TypeScript</p>
-      <p><strong>Herramientas:</strong> Android Studio, Visual Studio, NetBeans, Firebase, Angular, Photoshop, Premiere Pro, StarUML</p>
-      <p><strong>Email:</strong> rodriguezjulian311@email.com</p>
-      <p><strong>Teléfono:</strong> +57 300 459 2819</p>
-      <p><strong>Ubicación:</strong> chia -bogota- Colombia</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
-    </div>
+<section class="categories">
+  <h2>Categorías</h2>
+  <div class="category-grid">
+    <a href="casas.html" class="category-card">
+      <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Casas en venta">
+      <span>🏠 Casas en venta</span>
+    </a>
+    <a href="arriendos.html" class="category-card">
+      <img src="imagenes/casas/Casa en gdl_.jpeg" alt="Arriendos">
+      <span>🏢 Apartamentos en arriendo</span>
+    </a>
+    <a href="lotes.html" class="category-card">
+      <img src="imagenes/casas/Casa en venta_.jpeg" alt="Lotes y fincas">
+      <span>🌳 Lotes y fincas</span>
+    </a>
+    <a href="proyectos.html" class="category-card">
+      <img src="imagenes/casas/casa4.jpeg" alt="Proyectos nuevos">
+      <span>🏘️ Proyectos nuevos</span>
+    </a>
   </div>
-</div>
+</section>
 
+  </main>
 
-    <h2>Servicios</h2>
-    <ul>
-      <li>Desarrollo de aplicaciones móviles</li>
-      <li>Diseño y desarrollo de páginas web</li>
-      <li>Automatización y optimización de procesos</li>
-    </ul>
-  </section>
-
-  <div class="contacto">
-    <h2>Contáctame</h2>
-    <p>Email: rodriguezjulian311@gmail.com | WhatsApp: 300 459 2819</p>
-    <p><a href="https://linkedin.com/in/julian-rodriguez-b6b025249" target="_blank">LinkedIn</a></p>
-  </div>
+  <footer>
+    <p>&copy; 2025 Finca Raíz. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

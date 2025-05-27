@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casas en Venta</title>
+  <link rel="stylesheet" href="arriendos.css" />
+</head>
+<body class="arriendos-page">
+
+  <header>
+    <div class="logo">🏡 Finca Raíz</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- TOP BANNER PROFESIONAL -->
+<div class="top-image-banner">
+  <div class="banner-overlay">
+    <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Casas en venta">
+    <div class="banner-text">
+      <h1>Casas en Venta</h1>
+      <p>Viviendas modernas, campestres y familiares a tu alcance</p>
+    </div>
+  </div>
+</div>
+
+
+  <main>
+    <section class="hero">
+      <h1>Casas en Venta</h1>
+      <p>Explora nuestras opciones disponibles</p>
+    </section>
+
+    <section class="category-grid">
+      <div class="category-card">
+        <img src="imagenes/casas/Casa en gdl_.jpeg" alt="Casa 1">
+        <span>Casa 1 - $250,000,000 COP</span>
+      </div>
+      <div class="category-card">
+        <img src="imagenes/casas/Casa en venta_.jpeg" alt="Casa 2">
+        <span>Casa 2 - $300,000,000 COP</span>
+      </div>
+      <div class="category-card">
+        <img src="imagenes/casas/casa4.jpeg" alt="Casa 3">
+        <span>Casa 3 - $350,000,000 COP</span>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN CON BOTÓN "VER MÁS IMÁGENES" -->
+    <section class="house-gallery">
+      <div class="house-card">
+        <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Casa 1">
+        <div class="house-info">
+          <h3>Casa Moderna en Envigado</h3>
+          <p>3 habitaciones, 2 baños</p>
+          <button onclick="openModal('casa1')">Ver más imágenes</button>
+        </div>
+      </div>
+
+      <div class="house-card">
+        <img src="imagenes/casas/Casa en gdl_.jpeg" alt="Casa 2">
+        <div class="house-info">
+          <h3>Casa Campestre en Rionegro</h3>
+          <p>Terreno amplio con jardín</p>
+          <button onclick="openModal('casa2')">Ver más imágenes</button>
+        </div>
+      </div>
+
+      <div class="house-card">
+        <img src="imagenes/casas/casa4.jpeg" alt="Casa 3">
+        <div class="house-info">
+          <h3>Casa Familiar en Sabaneta</h3>
+          <p>2 pisos, parqueadero privado</p>
+          <button onclick="openModal('casa3')">Ver más imágenes</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALES CON MÁS IMÁGENES -->
+    <div id="modal-casa1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('casa1')">&times;</span>
+        <h2>Imágenes de la Casa</h2>
+        <div class="modal-images">
+          <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Imagen 1">
+          <img src="imagenes/casas/Casa en gdl_.jpeg" alt="Imagen 2">
+          <img src="imagenes/casas/descarga.jpeg" alt="Imagen 3">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-casa2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('casa2')">&times;</span>
+        <h2>Imágenes de la Casa</h2>
+        <div class="modal-images">
+          <img src="imagenes/casas/Alvento _ Casas en venta Monterrey _ JAVER _ Fachadas de casas modernas, Fachadas de casas infonavit, Casas en venta.jpeg" alt="Imagen 1">
+          <img src="imagenes/casas/Casa en venta_.jpeg" alt="Imagen 2">
+          <img src="imagenes/casas/PARDINA.jpeg" alt="Imagen 3">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-casa3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('casa3')">&times;</span>
+        <h2>Imágenes de la Casa</h2>
+        <div class="modal-images">
+          <img src="imagenes/casas/descarga.jpeg" alt="Imagen 1">
+          <img src="imagenes/casas/PARDINA.jpeg" alt="Imagen 2">
+          <img src="imagenes/casas/Casa en venta_.jpeg" alt="Imagen 3">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Finca Raíz. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT PARA MODALES -->
+  <script>
+    function openModal(id) {
+      document.getElementById(`modal-${id}`).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(`modal-${id}`).style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
